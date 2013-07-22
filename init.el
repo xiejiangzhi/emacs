@@ -15,3 +15,6 @@
 
 (require 'undo-tree)
 (global-undo-tree-mode)
+
+(set-frame-parameter (selected-frame) 'alpha (list 90 50))
+(add-to-list 'default-frame-alist (cons 'alpha (list 90 50)))
