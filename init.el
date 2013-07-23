@@ -1,6 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d/lib/")
 
 (require `dirtree)
+(global-set-key "\C-o" 'dirtree-show)
 
 (require 'linum)
 (global-linum-mode 1)
@@ -15,3 +16,6 @@
 
 (require 'undo-tree)
 (global-undo-tree-mode)
+
+(set-frame-parameter (selected-frame) 'alpha (list 90 50))
+(add-to-list 'default-frame-alist (cons 'alpha (list 90 50)))
