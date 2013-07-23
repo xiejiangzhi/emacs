@@ -1,6 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d/lib/")
 
 (require `dirtree)
+(global-set-key "\C-o" 'dirtree-show)
 
 (require 'linum)
 (global-linum-mode 1)
