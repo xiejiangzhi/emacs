@@ -19,3 +19,5 @@
 
 (set-frame-parameter (selected-frame) 'alpha (list 90 50))
 (add-to-list 'default-frame-alist (cons 'alpha (list 90 50)))
+
+(setq ruby-deep-indent-paren-style nil)
