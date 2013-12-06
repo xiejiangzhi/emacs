@@ -6,8 +6,9 @@
 (set-locale-environment "UTF-8")
 
 (setq default-frame-alist 
-  '((height . 40) (width . 128) (tool-bar-lines . 0)
-)) 
+  '((height . 35) (width . 110) (tool-bar-lines . 0)
+))
+(set-face-attribute 'default nil :height 135)
 
 (set-frame-parameter (selected-frame) 'alpha (list 95 90))
 (add-to-list 'default-frame-alist (cons 'alpha (list 95 90)))
@@ -43,9 +44,11 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
-
 ; jbuilder
 (add-to-list 'auto-mode-alist '("\\.jbuilder\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
 
+; slim
+(autoload 'slim-mode "slim-mode")
+(add-to-list 'auto-mode-alist '("\\.slim\\'" . slim-mode))
 
